@@ -17,8 +17,26 @@
         "name": "next"
       }
     ],
+    "baseUrl": "src/",
     "paths": {
-      "@/components/*": ["./src/*"]
+      "@/components/*": [
+        "_components/*"
+      ],
+      "@/ui/*": [
+        "_ui/*"
+      ],
+      "@/constants/*": [
+        "_lib/constants/*"
+      ],
+      "@/hooks/*": [
+        "_lib/hooks/*"
+      ],
+      "@/types/*": [
+        "_lib/types/*"
+      ],
+      "@/utils/*": [
+        "_lib/utils/*"
+      ]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
